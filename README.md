@@ -8,8 +8,6 @@
 
 A lightweight Python tool that transforms CSV product data into beautifully formatted, print-ready Arabic price labels. Perfect for retail stores, markets, and businesses needing professional-looking price tags.
 
-![Demo](https://via.placeholder.com/800x400/ee1c24/ffffff?text=Price+Labels+Demo)
-
 ## ✨ Features
 
 - 📄 **A4 Optimized**: Perfectly sized labels (21 per page) for standard A4 paper
