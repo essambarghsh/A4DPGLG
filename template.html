@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4 Dynamic Price Grid Label Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --border-size: 2px;
+        }
+
+        body {
+            font-family: "Noto Kufi Arabic", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 12px;
+        }
+
+        .a4-page {
+            width: 190mm;
+            height: 275mm;
+            border: var(--border-size) dashed #000000;
+            border-left: 0;
+            border-bottom: 0;
+            margin: 0 auto;
+            margin-bottom: 32px;
+            padding: 0;
+        }
+
+        .labels {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            gap: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .label {
+            background: #ffffff;
+            border-bottom: var(--border-size) dashed #000000;
+            border-left: var(--border-size) dashed #000000;
+            padding: 4px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .label-header,
+        .label-footer {
+            background-color: #ee1c24;
+            color: #ffffff;
+            flex: 1.5;
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+        }
+
+        .label-header {
+            overflow: hidden;
+            justify-content: center;
+            font-size: 13px;
+            line-height: 1.5;
+            flex: 1.8;
+            text-align: center;
+        }
+
+        .label-footer {
+            justify-content: space-between;
+        }
+
+        .label-body {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 12px;
+        }
+
+        .selling-price {
+            display: inline-block;
+            font-size: 30px;
+            line-height: 1;
+            margin-left: 8px;
+        }
+
+        .regular-price {
+            position: relative;
+            display: inline-block;
+            font-size: 20px;
+            line-height: 1;
+            margin: 0 8px;
+        }
+
+        .regular-price::after {
+            content: "";
+            height: 2px;
+            left: -16px;
+            right: -16px;
+            top: 8px;
+            opacity: 50%;
+            transform: rotate(347deg);
+            position: absolute;
+            background-color: #000000;
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a4-pages">
+        <div class="a4-page" data-labels-no="21">
+            <div class="labels">
+                <div class="label">
+                    <div class="label-header">اسم الصنف اسم الصنف اسم الصنف</div>
+                    <div class="label-body">
+                        <span class="body-right">فقط</span>
+                        <span class="selling-price">0.00</span>
+                        <span class="body-left">جنية</span>
+                    </div>
+                    <div class="label-footer">
+                        <span class="footer-right">بدلاً من</span>
+                        <span class="regular-price">0.00</span>
+                        <span class="footer-left">جنية</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

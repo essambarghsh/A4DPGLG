@@ -1,0 +1,14 @@
+{
+  "name": "a4-dynamic-price-grid-label-generator-a4dpglg",
+  "version": "1.0.0",
+  "description": "A4 Dynamic Price Grid Label Generator (A4DPGLG)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "A4"
+  ],
+  "author": "Essam Barghsh",
+  "license": "ISC"
+}
