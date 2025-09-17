@@ -2,7 +2,7 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.6%2B-blue.svg)](https://python.org)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](LICENSE)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/username/a4-price-label-generator/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/essambarghsh/A4DPGLG/graphs/commit-activity)
 
 > 🏷️ Generate professional Arabic price labels optimized for A4 printing with dynamic pricing and bulk processing
 
@@ -30,8 +30,8 @@ A lightweight Python tool that transforms CSV product data into beautifully form
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/username/a4-price-label-generator.git
-cd a4-price-label-generator
+git clone https://github.com/essambarghsh/A4DPGLG.git
+cd A4DPGLG
 ```
 
 2. Install dependencies:
@@ -118,7 +118,7 @@ The default layout provides:
 ## 📁 Project Structure
 
 ```
-a4-price-label-generator/
+A4DPGLG/
 ├── generate_labels.py      # Main label generator script
 ├── template.html          # HTML template for labels
 ├── main.csv              # Sample product data
@@ -164,7 +164,7 @@ We welcome contributions! Here's how you can help:
 
 ```bash
 # Clone your fork
-git clone https://github.com/yourusername/a4-price-label-generator.git
+git clone https://github.com/essambarghsh/A4DPGLG.git
 
 # Install development dependencies
 pip install pandas pytest
@@ -185,9 +185,9 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 🐛 **Bug Reports**: [Open an issue](https://github.com/username/a4-price-label-generator/issues)
-- 💡 **Feature Requests**: [Start a discussion](https://github.com/username/a4-price-label-generator/discussions)
-- 📖 **Documentation**: Check our [Wiki](https://github.com/username/a4-price-label-generator/wiki)
+- 🐛 **Bug Reports**: [Open an issue](https://github.com/essambarghsh/A4DPGLG/issues)
+- 💡 **Feature Requests**: [Start a discussion](https://github.com/essambarghsh/A4DPGLG/discussions)
+- 📖 **Documentation**: Check our [Wiki](https://github.com/essambarghsh/A4DPGLG/wiki)
 
 ## 🚀 What's Next?
 
